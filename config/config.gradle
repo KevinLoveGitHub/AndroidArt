@@ -1,0 +1,184 @@
+ext {
+    def supportVersion = "26.1.0"
+    def designVersion = "26.1.0"
+    def guavaVersion = "19.0"
+    def multiDexVersion = "1.0.1"
+    def constraintVersion = "1.0.2"
+    def utilV = "1.4"
+
+    def butterKnifeVersion = "8.1.0"
+    def junitVersion = "4.12"
+    def daggerVersion = "2.11"
+
+    def rxJavaVersion = " 2.1.0"
+    def rxAndroidVersion = "2.0.1"
+    def rxRelayVersion = "2.0.0"
+
+    def okioVersion = "1.13.0"
+    def okhttpVersion = "3.8.1"
+    def retrofitVersion = "2.1.0"
+    def rxJavaAdapterVersion = "2.2.0"
+    def fastJsonVersion = "1.2.37"
+
+    def gsonVersion = "2.8.0"
+    def autoValueVersion = "1.5"
+    def autoValueGsonVersion = "0.4.6"
+    def autoValueParcelVersion = "0.2.5"
+
+    def AnnotationVersion = "10.0-b28"
+
+    def robolectricVersion = "3.1.1"
+    def daggerMockVersion = "0.6.2"
+
+    def stethoVersion = "1.5.0"
+    def glideVersion = "4.5.0"
+
+    def componentVersion = "1.0.0"
+    def nineOldAndroidsVersion = "2.4.0"
+
+    def recyclerViewVersion = "v1.1.2"
+    def circleImageViewVersion = "2.2.0"
+    def immersionBarVersion = "2.3.0"
+    def adapterHelperVersion = "2.9.30"
+    def ucropVersion = "2.2.1"
+    def rxpermissionsVersion = "0.9.4"
+
+    def leanCloudVersion = "v4.4.3"
+    def qiniuVersion = "7.3.10"
+    def facebookVersion = "4.26.0"
+    def twitterVersion = "3.1.1"
+    def hyphenateV = "3.3.0"
+    def gmsV = "9.4.0"
+    def firebaseVersion = "11.0.4"
+    def firebaseAuthVersion = "11.2.0"
+
+    def leakCanaryVersion = "1.3.1"
+    def blockCanaryVersion = "1.5.0"
+
+    def appName = "Mustage"
+
+    appNames = [
+            release: "${appName}",
+            debug  : "${appName}.Debug",
+    ]
+
+    configuration = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "26.0.2",
+
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            versionCode      : 2,
+            versionName      : "0.0.1",
+            multiDexEnabled  : true,
+
+            javaVersion      : JavaVersion.VERSION_1_8,
+    ]
+
+    libraries = [
+            supportAppcompat        : "com.android.support:appcompat-v7:${supportVersion}",
+            supportV4               : "com.android.support:support-v4:${supportVersion}",
+            design                  : "com.android.support:design:${designVersion}",
+            guava                   : "com.google.guava:guava:${guavaVersion}",
+            multiDex                : "com.android.support:multidex:${multiDexVersion}",
+            constraint              : "com.android.support.constraint:constraint-layout:${constraintVersion}",
+            util                    : "com.github.KevinLoveGitHub:Util:${utilV}",
+
+            butterKnife             : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifeCompiler     : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            junit                   : "junit:junit:${junitVersion}",
+
+            dagger                  : "com.google.dagger:dagger:${daggerVersion}",
+            daggerAndroid           : "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerSupportAndroid    : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerCompiler          : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerAndroidCompiler   : "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            rxJava                  : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid               : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxRelay                 : "com.jakewharton.rxrelay2:rxrelay:${rxRelayVersion}",
+
+            okio                    : "com.squareup.okio:okio:${okioVersion}",
+            okhttp                  : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okhttpLogging           : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGson            : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            rxJavaAdapter           : "com.squareup.retrofit2:adapter-rxjava2:${rxJavaAdapterVersion}",
+            fastJson                : "com.alibaba:fastjson:${fastJsonVersion}",
+
+            robolectric             : "org.robolectric:robolectric:${robolectricVersion}",
+
+            gson                    : "com.google.code.gson:gson:${gsonVersion}",
+            autoValue               : "com.google.auto.value:auto-value:${autoValueVersion}",
+            autoValueGson           : "com.ryanharter.auto.value:auto-value-gson:${autoValueGsonVersion}",
+            autoValueParcel         : "com.ryanharter.auto.value:auto-value-parcel:${autoValueParcelVersion}",
+            autoValueParcelAdapter  : "com.ryanharter.auto.value:auto-value-parcel-adapter:${autoValueParcelVersion}",
+
+            annotation              : "org.glassfish:javax.annotation:${AnnotationVersion}",
+
+            daggerMock              : "com.github.fabioCollini:DaggerMock:${daggerMockVersion}",
+            mockito                 : "org.mockito:mockito-core:2.1.0-beta.125",
+
+            stetho                  : "com.facebook.stetho:stetho:${stethoVersion}",
+            glide                   : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler           : "com.github.bumptech.glide:compiler:${glideVersion}",
+
+            lifecylesRuntime        : "android.arch.lifecycle:runtime:${componentVersion}",
+            lifecylesExtensions     : "android.arch.lifecycle:extensions:${componentVersion}",
+            lifecylesCompiler       : "android.arch.lifecycle:compiler:${componentVersion}",
+            room                    : "android.arch.persistence.room:runtime:${componentVersion}",
+            roomRxjava2             : "android.arch.persistence.room:rxjava2:${componentVersion}",
+            roomCompiler            : "android.arch.persistence.room:compiler:${componentVersion}",
+            nineOldAndroids         : "com.nineoldandroids:library:${nineOldAndroidsVersion}",
+
+            recyclerViewPager       : "com.github.lsjwzh.RecyclerViewPager:lib:${recyclerViewVersion}@aar",
+            circleImageView         : "de.hdodenhof:circleimageview:${circleImageViewVersion}",
+            immersionBar            : "com.gyf.barlibrary:barlibrary:${immersionBarVersion}",
+            adapterHelper           : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${adapterHelperVersion}",
+            ucrop                   : "com.github.yalantis:ucrop:${ucropVersion}",
+            rxpermissions           : "com.tbruyelle.rxpermissions2:rxpermissions:${rxpermissionsVersion}@aar",
+
+
+
+            debugDependencies        : [
+                    leakCanary      : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+                    blockCanary     : "com.github.markzhai:blockcanary-android:${blockCanaryVersion}"
+            ],
+
+            releaseDependencies      : [
+                    leakCanary      : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+                    blockCanary     : "com.github.markzhai:blockcanary-no-op:${blockCanaryVersion}"
+            ]
+    ]
+
+    thirdParty = [
+            umeng                   : "com.umeng.analytics:analytics:latest.integration",
+            qiniu                   : "com.qiniu:qiniu-android-sdk:${qiniuVersion}",
+            leanCloudBase           : "cn.leancloud.android:avoscloud-sdk:${leanCloudVersion}",
+
+            facebook                : "com.facebook.android:facebook-android-sdk:${facebookVersion}",
+            twitter_core            : "com.twitter.sdk.android:twitter-core:${twitterVersion}",
+            twitter_ui              : "com.twitter.sdk.android:tweet-ui:${twitterVersion}",
+            twitter_composer        : "com.twitter.sdk.android:tweet-composer:${twitterVersion}",
+            twitter_mopub           : "com.twitter.sdk.android:twitter-mopub:${twitterVersion}",
+    ]
+
+    firebase = [
+            firebase                : "com.google.firebase:firebase-core:${firebaseVersion}",
+            firebaseAuth            : "com.google.firebase:firebase-auth:${firebaseVersion}",
+            firebaseMsg            : "com.google.firebase:firebase-messaging:${firebaseVersion}"
+    ]
+
+    arguments = [
+            RELEASE_ENDPOINT                    : "\"http://lovedev.com/\"",
+            DEBUG_ENDPOINT                      : "\"http://lovedev.com/\"",
+
+            RELEASE_LeanCloud_AppId             : "\"JBCyid797qS5I6OfT45DP1zM-gzGzoHsz\"",
+            RELEASE_LeanCloud_AppKey            : "\"q3wI59KSKaPcdnTtebtuJnog\"",
+
+            DEBUG_LeanCloud_AppId             : "\"JBCyid797qS5I6OfT45DP1zM-gzGzoHsz\"",
+            DEBUG_LeanCloud_AppKey            : "\"q3wI59KSKaPcdnTtebtuJnog\"",
+
+    ]
+}
