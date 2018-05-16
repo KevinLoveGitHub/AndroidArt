@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="org.lovedev.chapter_1.MainActivity">
+
+	<Button
+		android:id="@+id/btn1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="navigate"
+		android:text="Navigate to second activity"/>
+
+
+	<Button
+		android:id="@+id/btn2"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="appContextNavigate"
+		android:text="Application context start actvity"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="appContextNavigateWithFlag"
+		android:text="Application context start actvity with flag"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="setLaunchMode"
+		android:text="Set second activity launch mode"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="launchFourActivity"
+		android:text="Launch FourActivity"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:onClick="launchIntentFilterActivity"
+		android:text="Launch IntentFilterActivity"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="org.lovedev.chapter_2.MainActivity">
+
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="navToFirst"
+		android:layout_height="wrap_content"
+		android:text="First"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="navToSecond"
+		android:layout_height="wrap_content"
+		android:text="Second"/>
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="navToProvide"
+		android:layout_height="wrap_content"
+		android:text="Provide"/>
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="navToMessenger"
+		android:layout_height="wrap_content"
+		android:text="Messenger"/>
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="serializable"
+		android:layout_height="wrap_content"
+		android:text="Serializable"/>
+	<Button
+		android:layout_width="match_parent"
+		android:onClick="deserializable"
+		android:layout_height="wrap_content"
+		android:text="Deserializable"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

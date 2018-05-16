@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ViewOnTouchActivity">
+
+	<org.lovedev.chapter_3.CustomView
+		android:id="@+id/view_true"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:text="onTouchEventListener Return True"/>
+
+	<org.lovedev.chapter_3.CustomView
+		android:id="@+id/view_false"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:text="onTouchEventListener Return False"/>
+
+	<org.lovedev.chapter_3.CustomView
+		android:id="@+id/disable_btn"
+		android:layout_width="match_parent"
+		android:text="set bottom enable"
+		android:layout_height="50dp"/>
+
+	<org.lovedev.chapter_3.CustomView
+		android:id="@+id/clickable_btn"
+		android:layout_width="match_parent"
+		android:text="set bottom clickable"
+		android:layout_height="50dp"/>
+</LinearLayout>
