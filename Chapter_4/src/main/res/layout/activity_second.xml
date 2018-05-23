@@ -6,13 +6,15 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	tools:context=".MainActivity">
+	tools:context=".SecondActivity">
 
-	<org.lovedev.chapter_4.CustomView
-		android:id="@+id/view"
-		android:layout_width="100dp"
-		android:padding="10dp"
-		app:circle_color="@color/colorPrimary"
-		android:layout_height="100dp"/>
+	<include
+		layout="@layout/button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
 
+	<include
+		layout="@layout/button_merge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
 </LinearLayout>
